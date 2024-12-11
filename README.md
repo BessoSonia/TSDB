@@ -23,6 +23,7 @@
 4. Добавьте экспортера в конфигурацию Prometheus
 
     В файле конфигурации `prometheus.yml` добавьте следующее:
+
     ```yaml
     scrape_configs:
       - job_name: 'custom_exporter'
@@ -31,6 +32,7 @@
     ```
 
     После этого перезапустите Prometheus:
+
     ```bash
     systemctl restart prometheus
     ```
@@ -40,6 +42,11 @@
     ```bash
     python exporter.py
     ```
+
+5. Откройте приложение
+    
+    Перейдите на localhost:8080/metrics
+
 
 5. Запросы PromQL
 
