@@ -45,7 +45,7 @@
 
 5. Откройте приложение
     
-    Перейдите на localhost:8080/metrics
+    Перейдите на `localhost:8080/metrics`
 
 
 5. Запросы PromQL
