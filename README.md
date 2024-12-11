@@ -47,15 +47,30 @@
 
     - Использование процессоров:
         ```promql
-        avg(rate(cpu_usage_percent[1m]))
+        cpu_usage_percent
         ```
 
-    - Использование памяти (всего и используемая):
+    - Использование памяти 
+        
+        Всего:
         ```promql
-        memory_total_bytes - memory_used_bytes
+        memory_total_bytes
         ```
+
+        Используемая:
+        ```promql
+        memory_used_bytes
+        ```
+
 
     - Объем дисков (всего и занятый):
+
+        Всего:
         ```promql
-        disk_total_bytes - disk_used_bytes
+        disk_total_bytes
+        ```
+
+        Занято:
+        ```promql
+        disk_used_bytes
         ```

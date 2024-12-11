@@ -3,10 +3,8 @@ import psutil
 import os
 import time
 from prometheus_client import Gauge, generate_latest, CollectorRegistry
-from dotenv import load_dotenv
 
 # Загрузка переменных окружения
-load_dotenv()
 EXPORTER_HOST = os.getenv("EXPORTER_HOST", "0.0.0.0")
 EXPORTER_PORT = int(os.getenv("EXPORTER_PORT", 8080))
 METRICS_UPDATE_INTERVAL = 5
